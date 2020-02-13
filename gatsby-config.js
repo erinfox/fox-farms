@@ -1,10 +1,35 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Fox Farms`,
+    menuLinks: [
+      {
+        name: "HOME",
+        link: "/",
+      },
+      {
+        name: "WHAT'S AVAILABLE",
+        link: "/available",
+      },
+      {
+        name: "BLOG",
+        link: "/blog",
+      },
+      {
+        name: "CONTACT",
+        link: "/contact",
+      },
+    ],
+    description: ``,
+    author: `@erinfox`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `x9rdu88shwbb`,
+        accessToken: `W4Es8dvIC3VGj7jw_by01vGZM0mh75AQyOSKm4GSpwo`,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
