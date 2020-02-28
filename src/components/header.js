@@ -4,27 +4,34 @@ const Header = ({ siteTitle, menuLinks }) => (
   <header
     style={{
       background: "transparent",
-      // marginBottom: "1.45rem",
+      // marginTop:
     }}
   >
     <div
       style={{
         background: "transparent",
-        // marginBottom: "1.45rem",
         borderBottom: "1px solid gray",
+        // overflow: "hidden",
+        position: "fixed",
+        width: "100%",
+        backgroundColor: "white",
       }}
     >
       <div
         style={{
           margin: "0 auto",
-          maxWidth: 1000,
-          // padding: "1.45rem 1.0875rem",
+          maxWidth: "1300px",
           display: "flex",
-          // justifyItems: "space-between",
-          // alignItems: "center",
         }}
       >
-        <h1 style={{ margin: 0, flex: 1 }}>
+        <h1
+          style={{
+            margin: 0,
+            flex: 1,
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
           <Link
             to="/"
             style={{
@@ -40,7 +47,6 @@ const Header = ({ siteTitle, menuLinks }) => (
             <ul
               style={{
                 display: "flex",
-                // flex: 1,
                 justifyContent: "center",
                 alignItems: "center",
               }}

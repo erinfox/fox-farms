@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 const Contact = () => (
   <Layout>
     <SEO title="Contact" />
-    <h1>Hi from the Contact page</h1>
+    <h1>Have questions? Reach out! </h1>
     <p>contact form + photo that should hook up to foxfarms17924@gmail.com </p>
   </Layout>
 )

@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 const Available = () => (
   <Layout>
     <SEO title="Whats Available" />
-    <h1>Hi from the available page</h1>
+    <h1>What we offer</h1>
     <p>
       list of items they sell (honey, eggs, jam) with months that they are
       available, and a link to the contact page if a user is interested in
