@@ -24,6 +24,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: `foxfarms17924`,
+      },
+    },
+    {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: `x9rdu88shwbb`,

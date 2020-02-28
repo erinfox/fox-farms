@@ -8,6 +8,11 @@ const Available = () => (
   <Layout>
     <SEO title="Whats Available" />
     <h1>Hi from the available page</h1>
+    <p>
+      list of items they sell (honey, eggs, jam) with months that they are
+      available, and a link to the contact page if a user is interested in
+      purchasing{" "}
+    </p>
   </Layout>
 )
 

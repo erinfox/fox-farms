@@ -4,23 +4,24 @@ const Header = ({ siteTitle, menuLinks }) => (
   <header
     style={{
       background: "transparent",
-      marginBottom: "1.45rem",
+      // marginBottom: "1.45rem",
     }}
   >
     <div
       style={{
         background: "transparent",
-        marginBottom: "1.45rem",
+        // marginBottom: "1.45rem",
+        borderBottom: "1px solid gray",
       }}
     >
       <div
         style={{
           margin: "0 auto",
-          maxWidth: 960,
-          padding: "1.45rem 1.0875rem",
+          maxWidth: 1000,
+          // padding: "1.45rem 1.0875rem",
           display: "flex",
-          justifyItems: "space-between",
-          alignItems: "center",
+          // justifyItems: "space-between",
+          // alignItems: "center",
         }}
       >
         <h1 style={{ margin: 0, flex: 1 }}>
@@ -36,13 +37,20 @@ const Header = ({ siteTitle, menuLinks }) => (
         </h1>
         <div>
           <nav>
-            <ul style={{ display: "flex", flex: 1 }}>
+            <ul
+              style={{
+                display: "flex",
+                // flex: 1,
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
               {menuLinks.map(link => (
                 <li
                   key={link.name}
                   style={{
                     listStyleType: `none`,
-                    padding: `1rem`,
+                    padding: 10,
                   }}
                 >
                   <Link style={{ color: `black` }} to={link.link}>
