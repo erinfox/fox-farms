@@ -13,20 +13,17 @@ const IndexPage = ({ data }) => {
       <div
         style={{
           display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
+          paddingTop: "120px",
         }}
       >
-        <img src={Logo} style={{ width: "450px" }} />
+        <img src={Logo} style={{ width: "350px", height: "350px" }} />
 
         <div
           style={{
-            width: "1100px",
             display: "flex",
             flexDirection: "column",
-            // alignItems: "center",
-            // justifyContent: "center",
+            justifyContent: "center",
+            textAlign: "justify",
           }}
         >
           <p>
@@ -37,7 +34,7 @@ const IndexPage = ({ data }) => {
             few barn cats.{" "}
           </p>
           <p>
-            Our farmhouse and 23 acres house was built in 1898 with additional
+            On 23 acres, our farmhouse was built in 1898 with additional
             construction in 1935. This belonged to some of the original families
             that farmed on this property. When we purchased the property we
             completely refurbished the house from the ground up. Even purchasing

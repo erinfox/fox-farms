@@ -13,6 +13,10 @@ const Available = () => (
       available, and a link to the contact page if a user is interested in
       purchasing{" "}
     </p>
+    <h3>
+      Interested in purchasing anything? Fill out our{" "}
+      <a href="/contact">Contact</a> form and let us know!
+    </h3>
   </Layout>
 )
 
