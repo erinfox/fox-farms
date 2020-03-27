@@ -10,7 +10,6 @@ const Contact = () => (
     <SEO title="Contact" />
     <div
       style={{
-        paddingTop: "100px",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",

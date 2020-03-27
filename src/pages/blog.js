@@ -13,3 +13,7 @@ const Blog = () => (
 )
 
 export default Blog
+
+// need to set up a webhook to connect conntentful to graphiql
+// set up netlify / contentful webhook url
+// make it live on netlify  (like staging)

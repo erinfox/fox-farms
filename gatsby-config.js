@@ -2,14 +2,14 @@ module.exports = {
   siteMetadata: {
     title: `Fox Farms`,
     menuLinks: [
-      {
-        name: "HOME",
-        link: "/",
-      },
-      {
-        name: "WHAT'S AVAILABLE",
-        link: "/available",
-      },
+      // {
+      //   name: "HOME",
+      //   link: "/",
+      // },
+      // {
+      //   name: "WHAT'S AVAILABLE",
+      //   link: "/available",
+      // },
       {
         name: "BLOG",
         link: "/blog",

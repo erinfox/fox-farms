@@ -11,10 +11,12 @@ const Header = ({ siteTitle, menuLinks }) => (
       style={{
         background: "transparent",
         borderBottom: "1px solid gray",
-        // overflow: "hidden",
         position: "fixed",
         width: "100%",
         backgroundColor: "white",
+        paddingTop: "20px",
+        display: "flex",
+        alignItems: "center",
       }}
     >
       <div
@@ -47,8 +49,6 @@ const Header = ({ siteTitle, menuLinks }) => (
             <ul
               style={{
                 display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
               }}
             >
               {menuLinks.map(link => (
@@ -56,7 +56,8 @@ const Header = ({ siteTitle, menuLinks }) => (
                   key={link.name}
                   style={{
                     listStyleType: `none`,
-                    padding: 10,
+                    paddingLeft: 10,
+                    paddingRight: 10,
                   }}
                 >
                   <Link style={{ color: `black` }} to={link.link}>

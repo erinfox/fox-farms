@@ -10,23 +10,13 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <div
-        style={{
-          display: "flex",
-          paddingTop: "120px",
-        }}
-      >
-        <img src={Logo} style={{ width: "350px", height: "350px" }} />
-
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            textAlign: "justify",
-          }}
-        >
-          <p>
+      <div>
+        <div>
+          <img
+            src={Logo}
+            style={{ width: "250px", height: "250px", float: "left" }}
+          />
+          <p style={{ paddingTop: "55px" }}>
             Fox Farms is a natural organic farm established in 2015 along the
             Delta on the Sacramento Rivier. Among our farm animals we have
             sheep, chickens and bees. We have a small herd of sheep, livestock
@@ -70,14 +60,13 @@ export default IndexPage
 
 export const query = graphql`
   query HomeQuery {
-    allInstaNode {
+    allInstaNode(limit: 10, filter: { mediaType: { eq: "GraphImage" } }) {
       edges {
         node {
           thumbnails {
             src
           }
           original
-          mediaType
         }
       }
     }
