@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
         }}
       >
         <main style={{ paddingTop: "100px" }}>{children}</main>
-        <footer> ©{new Date().getFullYear()} Fox Farms</footer>
+        <footer> ©{new Date().getFullYear()} FOX FARMS</footer>
       </div>
     </>
   )

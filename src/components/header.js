@@ -4,7 +4,6 @@ const Header = ({ siteTitle, menuLinks }) => (
   <header
     style={{
       background: "transparent",
-      // marginTop:
     }}
   >
     <div
@@ -49,6 +48,8 @@ const Header = ({ siteTitle, menuLinks }) => (
             <ul
               style={{
                 display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
               }}
             >
               {menuLinks.map(link => (

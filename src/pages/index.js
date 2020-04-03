@@ -17,7 +17,7 @@ const IndexPage = ({ data }) => {
             style={{ width: "250px", height: "250px", float: "left" }}
           />
           <p style={{ paddingTop: "55px" }}>
-            Fox Farms is a natural organic farm established in 2015 along the
+            FOX FARMS is a natural organic farm established in 2015 along the
             Delta on the Sacramento Rivier. Among our farm animals we have
             sheep, chickens and bees. We have a small herd of sheep, livestock
             guardian dogs, Luke and Leia, and border collies Bob and Ann. and a

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Fox Farms`,
+    title: `FOX FARMS`,
     menuLinks: [
       // {
       //   name: "HOME",
