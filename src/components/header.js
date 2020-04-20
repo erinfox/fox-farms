@@ -1,5 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
+import Logo from "../images/gatsby-icon.png"
+
 const Header = ({ siteTitle, menuLinks }) => (
   <header
     style={{
@@ -13,63 +15,65 @@ const Header = ({ siteTitle, menuLinks }) => (
         position: "fixed",
         width: "100%",
         backgroundColor: "white",
-        paddingTop: "20px",
-        display: "flex",
-        alignItems: "center",
+        paddingTop: "16px",
+        paddingBottom: "8px",
       }}
     >
-      <div
-        style={{
-          margin: "0 auto",
-          maxWidth: "1300px",
-          display: "flex",
-        }}
-      >
-        <h1
+      <div style={{ position: "absolute", left: "0px", top: "-45px" }}>
+        <Link to="/">
+          <img
+            src={Logo}
+            style={{ width: "250px", height: "250px", float: "left" }}
+          />
+        </Link>
+      </div>
+
+      <nav>
+        <Link
+          to="/"
           style={{
-            margin: 0,
-            flex: 1,
-            justifyContent: "center",
-            alignItems: "center",
+            color: "black",
+            textDecoration: "none",
           }}
         >
-          <Link
-            to="/"
+          <h1
             style={{
-              color: "black",
-              textDecoration: "none",
+              marginBottom: "0px",
+              display: "flex",
+              flex: " 0 1 auto",
+              position: "absolute",
+              left: "50%",
+              transform: "translateX(-50%)",
             }}
           >
-            {siteTitle}
-          </Link>
-        </h1>
-        <div>
-          <nav>
-            <ul
+            FOX FARMS
+          </h1>
+        </Link>
+
+        <ul
+          style={{
+            display: "flex",
+            float: "right",
+            paddingRight: "60px",
+            paddingTop: "12px",
+          }}
+        >
+          {menuLinks.map(link => (
+            <li
+              key={link.name}
               style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
+                listStyleType: `none`,
+                paddingLeft: 12,
+                paddingRight: 12,
               }}
             >
-              {menuLinks.map(link => (
-                <li
-                  key={link.name}
-                  style={{
-                    listStyleType: `none`,
-                    paddingLeft: 10,
-                    paddingRight: 10,
-                  }}
-                >
-                  <Link style={{ color: `black` }} to={link.link}>
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </div>
-      </div>
+              <Link style={{ color: `black` }} to={link.link}>
+                {link.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </div>
   </header>
 )

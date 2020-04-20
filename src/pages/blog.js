@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 const Blog = () => (
   <Layout>
     <SEO title="blog" />
-    <h1>Farm Updates</h1>
+    <h1 style={{ display: "flex", justifyContent: "center" }}>Farm Updates</h1>
     <p>blog posts from contentful!</p>
   </Layout>
 )

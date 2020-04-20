@@ -23,8 +23,8 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header
-        menuLinks={data.site.siteMetadata.menuLinks}
         siteTitle={data.site.siteMetadata.title}
+        menuLinks={data.site.siteMetadata.menuLinks}
       />
       <div
         style={{
@@ -34,7 +34,15 @@ const Layout = ({ children }) => {
         }}
       >
         <main style={{ paddingTop: "100px" }}>{children}</main>
-        <footer> ©{new Date().getFullYear()} FOX FARMS</footer>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "auto",
+          }}
+        >
+          <footer> ©{new Date().getFullYear()} FOX FARMS</footer>
+        </div>
       </div>
     </>
   )
