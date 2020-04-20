@@ -11,17 +11,21 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO title="Home" />
       <img src={farmHouse} style={{ width: "100%", height: "100%" }} />
-      <h1
+      <div
         style={{
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
           paddingTop: "40px",
           paddingBottom: "40px",
+          paddingRight: "100px",
+          paddingLeft: "100px",
+          flexDirection: "column",
         }}
       >
-        some cool slogan should go here and be 2 lines
-      </h1>
+        <h1>“Let’s buy a farm,“ she said. “It will be fun!” </h1>
+        <h1>“Let’s buy some sheep,“ she said. “It will be fun!”</h1>
+      </div>
       <div style={{ display: "flex", justifyContent: "center" }}>
         {images.map(image => (
           <img

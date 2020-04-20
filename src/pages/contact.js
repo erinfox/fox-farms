@@ -21,7 +21,7 @@ const Contact = () => (
         src={dogs}
         style={{ width: "1000px", height: "100%", paddingBottom: "24px" }}
       />
-      <h1>Have questions or interesting in purchasing our products? </h1>
+      <h1>Have questions or interested in purchasing our products? </h1>
       <h3>Send us an email below</h3>
       <div style={{ display: "flex", justifyContent: "space-between" }}>
         <form
