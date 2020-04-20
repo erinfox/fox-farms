@@ -29,16 +29,18 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 1300,
-          padding: `0 1.0875rem 1.45rem`,
+          maxWidth: 1700,
+          // padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <main style={{ paddingTop: "100px" }}>{children}</main>
+        <main style={{ paddingTop: "80px" }}>{children}</main>
         <div
           style={{
             display: "flex",
             justifyContent: "center",
             marginTop: "auto",
+            paddingBottom: "32px",
+            paddingTop: "32px",
           }}
         >
           <footer> ©{new Date().getFullYear()} FOX FARMS</footer>

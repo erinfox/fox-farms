@@ -7,8 +7,11 @@ import SEO from "../components/seo"
 const Blog = () => (
   <Layout>
     <SEO title="blog" />
-    <h1 style={{ display: "flex", justifyContent: "center" }}>Farm Updates</h1>
-    <p>blog posts from contentful!</p>
+    <h1
+      style={{ display: "flex", justifyContent: "center", paddingTop: "140px" }}
+    >
+      COMING SOON!
+    </h1>
   </Layout>
 )
 
