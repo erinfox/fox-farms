@@ -1,11 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
-import Logo from "../images/gatsby-icon.png"
+import Logo from "../../content/images/gatsby-icon.png"
 
 const Header = ({ siteTitle, menuLinks }) => (
   <header
     style={{
       background: "transparent",
+      zIndex: 2,
+      position: "relative",
     }}
   >
     <div
@@ -19,11 +21,11 @@ const Header = ({ siteTitle, menuLinks }) => (
         paddingBottom: "8px",
       }}
     >
-      <div style={{ position: "absolute", left: "0px", top: "-45px" }}>
+      <div style={{ position: "absolute", left: "0px", top: "-72px" }}>
         <Link to="/">
           <img
             src={Logo}
-            style={{ width: "250px", height: "250px", float: "left" }}
+            style={{ width: "350px", height: "350px", float: "left" }}
           />
         </Link>
       </div>
@@ -35,20 +37,7 @@ const Header = ({ siteTitle, menuLinks }) => (
             color: "black",
             textDecoration: "none",
           }}
-        >
-          <h1
-            style={{
-              marginBottom: "0px",
-              display: "flex",
-              flex: " 0 1 auto",
-              position: "absolute",
-              left: "50%",
-              transform: "translateX(-50%)",
-            }}
-          >
-            FOX FARMS
-          </h1>
-        </Link>
+        ></Link>
 
         <ul
           style={{
